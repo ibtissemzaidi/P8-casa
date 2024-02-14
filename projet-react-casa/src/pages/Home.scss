@@ -1,0 +1,12 @@
+.Home {
+    &-card {
+        border-radius: 25px;
+        background-color: #F6F6F6;
+        padding: 50px;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        
+    }
+}
