@@ -1,8 +1,19 @@
-.Tag {
-    color: #FFF;
-    text-align: center;
-    font-size: 14px;
-    background-color: #FF6060;
-    border-radius: 10px;
-    padding: 5px 30px; 
+.tag {
+    display: flex;
+    &_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #ff6060;
+        width: 115px;
+        height: 25px;
+        color: #ffffff;
+        margin-top: 4%;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-right: 10px;
+        padding: 3px 31px 2px 30px;
+    }
 }

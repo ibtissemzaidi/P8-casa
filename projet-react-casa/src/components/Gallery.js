@@ -5,16 +5,16 @@ const Gallery = (props) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = props.images;
   const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % images.lenght);
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
   };
   const prevSlide = () => {
     setCurrentSlide(
-      (prevSlide) => (prevSlide - 1 + images.lenght) % images.lenght
+      (prevSlide) => (prevSlide - 1 + images.length) % images.length
     );
   };
   return (
     <>
-      {images.lenght > 1 && (
+      {images.length > 1 && (
         <div>
           <button
             className="previous"

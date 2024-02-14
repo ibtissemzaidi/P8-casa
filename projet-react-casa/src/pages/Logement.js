@@ -1,4 +1,4 @@
-import React from "react";
+import data from "../data.json";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -6,9 +6,9 @@ import Collapse from "../components/Collapse";
 import Gallery from "../components/Gallery";
 import Tag from "../components/Tag";
 
-const Logement = (data) => {
+const Logement = () => {
   const { id } = useParams();
-  const accommodation = data.find((item) => item.id === id);
+  const accommodation = data.find((logement) => logement.id === id);
   if (!accommodation) {
     return <div>Accommodation not found</div>;
   }

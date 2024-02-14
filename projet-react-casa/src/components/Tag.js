@@ -2,7 +2,11 @@ import React from "react";
 import "./Tag.scss";
 
 const Tag = (props) => {
-  return <span className="Tag">{props.children}</span>;
+  return (
+    <div className="tag">
+      <span className="tag_button">{props.nom}</span>
+    </div>
+  );
 };
 
 export default Tag;
