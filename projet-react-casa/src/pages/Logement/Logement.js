@@ -6,11 +6,23 @@ import Collapse from "../components/Collapse";
 import Gallery from "../components/Gallery";
 import Tag from "../components/Tag";
 
+// Page Logement > Contient le Composant Gallery, compo Rating et le composant Collapsedescription ainsi que les infos du logement et du propriétaire
+
 const Logement = () => {
   /***  Récupère la bonne fiche ***/
-  const { id } = useParams();
-  const ficheLogement = data.find((logement) => logement.id === id);
-  if (!ficheLogement) {
+  const [logement, setLogement] = useState(null);
+  const { id } = useParams(); // Récupère l'id du logement dans l'url
+
+  useEffect(() => {
+    // Récupère les infos du logement en fonction de l'id
+    const dataLocation = data.find((location) => location.id === id);
+    if (data) {
+      setLogement(dataLocation);
+    } else {
+      setLogement(null);
+    }
+  }, [id]);
+  if (!logement) {
     // Si l'id n'existe pas, affiche la page d'erreur
     return <Error />;
   }

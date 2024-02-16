@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
-import image from "../assets/background-about.png";
-import Collapse from "../components/Collapse";
+import Header from "../../components/Header/Header";
+import Banner from "../../components/Banner/Banner";
+import Footer from "../../components/Footer/Footer";
+import image from "../../assets/background-about.png";
+import Collapse from "../../components/Collapse/Collapse";
 const About = () => {
   return (
     <>
