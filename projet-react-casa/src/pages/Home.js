@@ -15,14 +15,7 @@ const Home = () => {
         <Banner title="Chez vous, partout et ailleurs" image={image} />
         <div className="Home-card">
           {data.map((card) => {
-            return (
-              <Card
-                image={card.cover}
-                title={card.title}
-                key={card.id}
-                id={card.id}
-              />
-            );
+            return <Card image={card.cover} title={card.title} id={card.id} />;
           })}
         </div>
       </div>
