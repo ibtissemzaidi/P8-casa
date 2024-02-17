@@ -34,44 +34,52 @@ const Logement = () => {
   const dataLocation = data.find((location) => location.id === id);
   const { title, pictures, location, tags, host, description, equipments } =
     dataLocation;
+  const equipements = dataLocation?.equipments.map((equipment, i) => {
+    return (
+      <ul key={i}>
+        <li>{equipment}</li>
+      </ul>
+    );
+  });
   return (
     <>
       <Header />
       {logement.pictures && <Gallery images={logement.pictures} />}
       <section className="'ContInfo'">
-        <div className="ContInfoLogement">
-          <h3 className="TittleInfo">{logement.title}</h3>
-          <p className="TextInfo">{logement.location}</p>
-          <ul className="TagUl">
-            {logement.tags.map((tag) => (
-              <li className="TagLi" key={tag}>
-                {tag}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="containerHost">
-          <div className="infoHost">
-            <p className="nameHost">{logement.host.name}</p>
-            <img
-              className="ImgHost"
-              src={logement.host.picture}
-              alt={logement.host.name}
-            />
-          </div>
-          <Rating rating={logement.rating} />
-        </div>
-        <div className="collapseinfo">
-          <Collapse title="Description">
-            <li key={id}>{description}</li>
-          </Collapse>
-          <Collapse title="Équipements">
-            <ul>
-              {equipments.map((equipment, id) => (
-                <li key={id}>{equipment}</li>
+        <div className="infoPro">
+          <div className="ContInfoLogement">
+            <h3 className="TittleInfo">{logement.title}</h3>
+            <p className="TextInfo">{logement.location}</p>
+            <ul className="TagUl">
+              {logement.tags.map((tag) => (
+                <li className="TagLi" key={tag}>
+                  {tag}
+                </li>
               ))}
             </ul>
-          </Collapse>
+          </div>
+          <div className="containerHost">
+            <div className="infoHost">
+              <p className="nameHost">{logement.host.name}</p>
+              <img
+                className="ImgHost"
+                src={logement.host.picture}
+                alt={logement.host.name}
+              />
+            </div>
+            <Rating rating={logement.rating} />
+          </div>
+        </div>
+        <div className="collapseinfo">
+          <div className="description-content_description">
+            <Collapse
+              title="Description"
+              content={dataLocation?.description}
+            ></Collapse>
+          </div>
+          <div className="description-content_equipement">
+            <Collapse title="Équipements" content={equipements}></Collapse>
+          </div>
         </div>
       </section>
 
