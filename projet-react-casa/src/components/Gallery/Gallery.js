@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Gallery.scss";
-import ArrowRight from "../assets/arrow-left.png";
-import ArrowLeft from "../assets/arrow-left.png";
+import ArrowRight from "../../assets/arrow-right.png";
+import ArrowLeft from "../../assets/arrow-left.png";
 
-const Gallery = ({ image }) => {
+const Gallery = (props) => {
   const [currentSlide, setCurrentSlide] = useState(0); // State > Index de l'image actuelle
   const images = props.images;
   const nextSlide = () => {
@@ -19,23 +19,18 @@ const Gallery = ({ image }) => {
     <section className="ContSlider">
       {images.length > 1 && ( // Si il n'y a qu'une seul image, on n'affiche seulement l'image
         <>
-          {/* // Affiche le compteur d'image */}
-          <p className="CountSlider">
-            {currentSlide + 1} / {images.length}
-          </p>
-
           {/* // Affiche les fleches de navigation, au click on passe a l'image suivante ou precedente */}
           <img
             className="ArrowSliderLeft"
             src={ArrowLeft}
             alt="Flèche gauche"
-            onClick={nextImage}
+            onClick={nextSlide}
           />
           <img
             className="ArrowSliderRight"
             src={ArrowRight}
             alt="Flèche droite"
-            onClick={prevImage}
+            onClick={prevSlide}
           />
         </>
       )}

@@ -22,3 +22,19 @@
        width: 7%;
     }
  }
+ .ArrowSliderRight {
+   position: absolute;
+   cursor: pointer;
+   left: 2%;
+   @media (max-width: 1001px) {
+      width: 7%;
+   }
+}
+.CountSlider {
+   position: absolute;
+
+   bottom: 0%;
+
+   color: white;
+   font-weight: 700;
+}

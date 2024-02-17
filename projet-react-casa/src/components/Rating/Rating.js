@@ -17,3 +17,4 @@ const Rating = (props) => {
     </div>
   );
 };
+export default Rating;
