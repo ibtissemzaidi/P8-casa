@@ -24,8 +24,8 @@
  }
  
  .TittleInfo{
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     margin: 0;
     color: #FF6060;
     @media (max-width: 1001px) {
@@ -65,7 +65,7 @@
  
  
  
- .ContInfoOwner{
+ .containerHost{
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -73,13 +73,13 @@
     @media (max-width: 1001px) {
        margin: 20px 0 0 0;
        width: 100%;
-       flex-direction: row-reverse;
+    
        justify-content: space-between;
-       align-items: center;
+    
     }
  }
  
- .ImgOwner{
+ .ImgHost{
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -91,7 +91,7 @@
     }
  }
  
- .TextInfoOwner{
+ .nameHost{
     margin: 0;
     width: 60px;
     font-size: 18px;
@@ -102,7 +102,7 @@
  }
  }
  
- .TEST{
+ .infoHost{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -110,3 +110,24 @@
        margin-bottom: 0;
     }
  }
+ .collapseinfo {
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+   gap: 60px;
+  
+}
+.collapse_title {
+   width: 500px;
+   background: var(--Red, #FF6060);
+   color: #FFF;
+   border-radius: 5px;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+
+
