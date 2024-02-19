@@ -112,31 +112,14 @@
        margin-bottom: 0;
     }
  }
- .collapseinfo {
+ .collapseContent {
    margin-top: 20px;
    display: flex;
    justify-content: space-between;
    gap: 60px;
   
-}
-.collapse_title {
-   width: 500px;
-   background: var(--Red, #FF6060);
-   color: #FFF;
-   border-radius: 5px;
-   padding: 10px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   font-size: 18px;
-   margin-bottom: 30px;
-}
-.description-content {
-   display: flex;
-   gap: 76px;
 
-
-   @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
        flex-direction: column;
        gap: 20px;
    }
@@ -144,6 +127,7 @@
 
    &__description {
        width: 60%;
+       overflow-wrap: break-word;
 
 
        @media screen and (max-width: 768px) {

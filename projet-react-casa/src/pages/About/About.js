@@ -4,6 +4,7 @@ import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
 import image from "../../assets/background-about.png";
 import Collapse from "../../components/Collapse/Collapse";
+import "./About.scss";
 const About = () => {
   return (
     <>

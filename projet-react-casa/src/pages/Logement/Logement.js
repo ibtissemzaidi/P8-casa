@@ -34,7 +34,7 @@ const Logement = () => {
   const dataLocation = data.find((location) => location.id === id);
   const { title, pictures, location, tags, host, description, equipments } =
     dataLocation;
-  const equipements = dataLocation?.equipments.map((equipment, i) => {
+  const equipements = dataLocation.equipments.map((equipment, i) => {
     return (
       <ul key={i}>
         <li>{equipment}</li>
@@ -70,14 +70,14 @@ const Logement = () => {
             <Rating rating={logement.rating} />
           </div>
         </div>
-        <div className="collapseinfo">
-          <div className="description-content_description">
+        <div className="collapseContent">
+          <div className="collapseContent_description">
             <Collapse
               title="Description"
-              content={dataLocation?.description}
+              content={dataLocation.description}
             ></Collapse>
           </div>
-          <div className="description-content_equipement">
+          <div className="collapseContent_equipement">
             <Collapse title="Équipements" content={equipements}></Collapse>
           </div>
         </div>
