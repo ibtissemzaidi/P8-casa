@@ -71,13 +71,13 @@ const Logement = () => {
           </div>
         </div>
         <div className="collapseContent">
-          <div className="collapseContent_description">
+          <div className="collapseContentchild">
             <Collapse
               title="Description"
               content={dataLocation.description}
             ></Collapse>
           </div>
-          <div className="collapseContent_equipement">
+          <div className="collapseContentchild">
             <Collapse title="Équipements" content={equipements}></Collapse>
           </div>
         </div>

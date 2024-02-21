@@ -10,7 +10,7 @@ const Collapse = ({ title, content }) => {
   };
 
   return (
-    <div className="coolapse">
+    <div className="collapse">
       <div
         onClick={openCloseCollapse}
         className={`collapse_title ${isOpen ? "open" : ""}`}
