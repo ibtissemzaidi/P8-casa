@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import Collapse from "../../components/Collapse/Collapse";
 import Gallery from "../../components/Gallery/Gallery";
 import Rating from "../../components/Rating/Rating";
-import Error from "../Home/Home";
+import Error from "../Error/Error";
 import "./Logement.scss";
 
 // Page Logement > Contient le Composant Gallery, compo Rating et le composant Collapsedescription ainsi que les infos du logement et du propriétaire

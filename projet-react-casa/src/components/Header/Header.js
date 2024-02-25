@@ -11,8 +11,7 @@ const Header = () => {
         <ul>
           <li>
             <NavLink to={"/"} className="nav-link">
-              {" "}
-              Accueil{" "}
+              Accueil
             </NavLink>
           </li>
           <li>
