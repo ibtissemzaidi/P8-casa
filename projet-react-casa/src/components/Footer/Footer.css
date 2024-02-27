@@ -1,0 +1,11 @@
+footer {
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+}
+footer .container {
+  padding: 66px 0;
+}
+footer .copyright {
+  margin-top: 28px;
+}/*# sourceMappingURL=Footer.css.map */

@@ -22,10 +22,19 @@ header {
                 text-decoration: none;
                 &:hover {
                     color: #FF6060;
+                    text-decoration: underline;
                     
                 }
-            }
+                
         }
+     
+            
+            
+        }
+        
+    }
+    .nav-active {
+        text-decoration-line: underline;
     }
 }
 

@@ -10,3 +10,14 @@
         
     }
 }
+@media screen and (max-width: 768px) {
+    .Home-card {
+      
+      flex-direction: column; /* Afficher les cartes en colonne */
+      align-items: center; /* Centrer les cartes horizontalement */
+      text-align: center; /* Centrer le texte à l'intérieur des cartes */
+    
+      }
+
+
+  }

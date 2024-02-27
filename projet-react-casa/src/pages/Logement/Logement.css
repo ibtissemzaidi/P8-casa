@@ -1,0 +1,146 @@
+.ContInfo {
+  color: #FF6060;
+  margin: 60px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .ContInfo {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+}
+
+.ContInfoLogement {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1001px) {
+  .ContInfoLogement {
+    width: 100%;
+  }
+}
+
+.TittleInfo {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+  color: #FF6060;
+}
+@media (max-width: 768px) {
+  .TittleInfo {
+    font-size: 25px;
+  }
+}
+
+.TextInfo {
+  margin: 0;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .TextInfo {
+    font-size: 13px;
+  }
+}
+
+.TagUl {
+  padding: 0;
+  margin: 25px 0 0;
+}
+
+.TagLi {
+  font-size: 14px;
+  display: inline-block;
+  background-color: #FF6060;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 10px;
+  margin: 0 20px 10px 0;
+}
+@media (max-width: 768px) {
+  .TagLi {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin: 0 15px 10px 0;
+  }
+}
+
+.infoPro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerHost {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 768px) {
+  .containerHost {
+    margin: 20px 0 0 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.ImgHost {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 0 0 30px;
+}
+@media (max-width: 768px) {
+  .ImgHost {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+}
+
+.nameHost {
+  margin: 0;
+  width: 60px;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .nameHost {
+    width: 40px;
+    font-size: 13px;
+  }
+}
+
+.infoHost {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .infoHost {
+    margin-bottom: 0;
+  }
+}
+
+.collapseContent {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+}
+.collapseContent .collapseContentchild {
+  width: 45%;
+  overflow-wrap: break-word;
+}
+@media screen and (max-width: 768px) {
+  .collapseContent .collapseContentchild {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collapseContent {
+    flex-direction: column;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=Logement.css.map */

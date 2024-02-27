@@ -1,0 +1,10 @@
+.collapse_about {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+@media screen and (max-width: 768px) {
+  .collapse_about {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}/*# sourceMappingURL=About.css.map */

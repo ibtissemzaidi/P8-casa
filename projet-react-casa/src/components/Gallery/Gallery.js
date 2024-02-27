@@ -6,6 +6,7 @@ import ArrowLeft from "../../assets/arrow-left.png";
 const Gallery = (props) => {
   const [currentSlide, setCurrentSlide] = useState(0); // State > Index de l'image actuelle
   const images = props.images;
+  const totalSlides = images.length;
   const nextSlide = () => {
     // Passe a l'image suivante
     setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
@@ -34,9 +35,13 @@ const Gallery = (props) => {
           />
         </>
       )}
-
       {/* // Affiche l'image actuelle en fonction de l'index */}
       <img className="ImgSlider" src={images[currentSlide]} alt="Logement" />
+      {/* Compteur d'images */}
+
+      <div className="ImageCounter">
+        {currentSlide + 1} / {totalSlides}
+      </div>
     </section>
   );
 };

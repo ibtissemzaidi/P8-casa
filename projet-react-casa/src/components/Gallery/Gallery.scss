@@ -38,3 +38,14 @@
    color: white;
    font-weight: 700;
 }
+.ImageCounter {
+   position: absolute; 
+   bottom: 10px; 
+   left: 50%; 
+   transform: translateX(-50%); 
+   background-color: rgba(0, 0, 0, 0.5); 
+   color: #fff; 
+   padding: 5px 10px; 
+   border-radius: 5px; 
+   font-size: 14px; 
+}
