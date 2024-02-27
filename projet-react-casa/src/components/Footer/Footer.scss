@@ -1,13 +1,14 @@
-footer {
+ .footer{
     background-color: #000;
     color: #FFF;
     text-align: center;
+    padding: 66px 0;
     
-    .container {
-        padding: 66px 0;
+@media screen and (max-width: 768px) {
+    gap:-0.44px;
+  }
     }
 
     .copyright {
         margin-top: 28px;
     }
-}

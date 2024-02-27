@@ -1,11 +1,15 @@
-footer {
+.footer {
   background-color: #000;
   color: #FFF;
   text-align: center;
-}
-footer .container {
   padding: 66px 0;
 }
-footer .copyright {
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: -0.44px;
+  }
+}
+
+.copyright {
   margin-top: 28px;
 }/*# sourceMappingURL=Footer.css.map */
